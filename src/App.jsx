@@ -55,7 +55,7 @@ function App() {
   },[]);
 
   return (
-    <main className={`${bg[IconRefbg]} bg-center bg-cover min-h-screen max-w-screen text-black font-lato flex justify-center items-center`}>
+    <main className={`${bg[IconRefbg]} bg-center bg-cover min-h-98vh max-w-screen min-w-360p text-black font-lato flex justify-center items-center`}>
       <Weather weatherInfo={weatherInfo} countryname={countryName}/>
     </main>
   )
