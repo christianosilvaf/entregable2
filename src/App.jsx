@@ -47,7 +47,7 @@ function App() {
   const url2=` http://api.worldbank.org/v2/country/${weatherInfo?.sys.country}?format=json`;
     
     axios.get(url2)
-      .then((data2)=> setcountryName(data2.data[1][0].name))
+      .then((data2)=> setcountryName(data2?.data[1][0].name))
       .catch((err)=> console.log(err));
 
   useEffect(()=>{
