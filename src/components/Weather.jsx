@@ -31,7 +31,7 @@ const Weather = ({weatherInfo,countryname}) => {
 
     return (
     <section className='text-center min-h-screen w-[350px] flex flex-col place-content-around items-center'>
-        <h2>{weatherInfo?.name}, {countryname}</h2>
+        <h2 className='bg-white/25 backdrop-blur-lg shadow-[0_2px_0px_rgba(0,0,0,0.3)] rounded-2xl p-3 text-black'>{weatherInfo?.name}, {countryname}</h2>
         <section className='flex flex-col gap-y-10'>
             <section className='bg-white/25 backdrop-blur-lg rounded-2xl place-content-evenly gap-10 p-5'>
                 <h3>State: {weatherInfo?.weather[0].description}</h3>
