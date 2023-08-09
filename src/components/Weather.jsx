@@ -47,7 +47,7 @@ const Weather = ({weatherInfo,countryname}) => {
 
             <section className='grid grid-cols-3 items-center place-content-around gap-x-2'>
 
-                <div  onClick={handlevel} className='bg-white/25 backdrop-blur-lg rounded-2xl flex flex-col items-center gap-y-3 hover:shadow-[0_3px_0px_rgba(0,0,0,0.3)] p-2'>
+                <div  onClick={handlevel} className='bg-white/25 backdrop-blur-lg rounded-2xl flex flex-col items-center gap-y-3 hover:shadow-[0_3px_0px_rgba(0,0,0,0.3)] p-2 cursor-pointer'>
                     <img className='object-cover h-10 w-10' src={"/images/wind.svg"} alt="" />
                     <span>{vel? velm_s: velkm_h}{vel? " m/s": " km/h"}</span>
                 </div>
@@ -57,7 +57,7 @@ const Weather = ({weatherInfo,countryname}) => {
                     <span>{weatherInfo?.main.humidity} %</span>
                 </div>
 
-                <div onClick={handlepre} className='bg-white/25 backdrop-blur-lg rounded-2xl flex flex-col items-center gap-y-3 hover:shadow-[0_3px_0px_rgba(0,0,0,0.3)]  p-2'>
+                <div onClick={handlepre} className='bg-white/25 backdrop-blur-lg rounded-2xl flex flex-col items-center gap-y-3 hover:shadow-[0_3px_0px_rgba(0,0,0,0.3)]  p-2 cursor-pointer'>
                     <img className='object-cover h-10 w-10' src={"/images/pressure.svg"} alt="" />
                     <span>{pre? prehpa: preAtm} {pre? " hpa": " Atm"}</span>
                 </div>
